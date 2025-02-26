@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Virtual Gift</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+</head>
+<body>
+    <h2>Swipe to See :)</h2>
+    <div class="gift-gallery">
+        <div><a href="https://ibb.co/hRkXBgPP"><img src="https://i.ibb.co/99JwbpFF/1.jpg" alt="Gift 1" border="0"></a></div>
+        <div><a href="https://ibb.co/Y7jw59nD"><img src="https://i.ibb.co/Z6T7Qs4H/2.jpg" alt="Gift 2" border="0"></a></div>
+        <div><a href="https://ibb.co/Q7SNQXGd"><img src="https://i.ibb.co/xK9jL3QH/3.jpg" alt="Gift 3" border="0"></a></div>
+        <div><a href="https://ibb.co/Ps8r68M0"><img src="https://i.ibb.co/9mjprjhS/4.jpg" alt="Gift 4" border="0"></a></div>
+        <div><a href="https://ibb.co/sJkwxjyY"><img src="https://i.ibb.co/BKdZWLqM/5.jpg" alt="Gift 5" border="0"></a></div>
+        <div><a href="https://ibb.co/TMcLH0Bk"><img src="https://i.ibb.co/4RWdjSZ7/6.jpg" alt="Gift 6" border="0"></a></div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.gift-gallery').slick({
+                dots: true,
+                infinite: false,  // Disables looping back to the first image
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
